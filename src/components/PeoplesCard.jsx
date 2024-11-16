@@ -1,5 +1,5 @@
-import React from 'react';
-import { useRouter } from 'next/navigation';
+import React from "react";
+import { useRouter } from "next/navigation";
 
 const PeoplesCard = ({ imageUrl, name, pageUrl }) => {
   const router = useRouter();
@@ -10,9 +10,10 @@ const PeoplesCard = ({ imageUrl, name, pageUrl }) => {
 
   return (
     <div
-      className="cursor-pointer text-center"
+      className="cursor-pointer text-center hover:shadow-lg transform hover:scale-105 transition duration-300"
       onClick={handleClick}
     >
+      
       <img
         src={imageUrl}
         alt={name}
